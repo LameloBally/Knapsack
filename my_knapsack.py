@@ -24,7 +24,9 @@ class Knapsack:
         self.data = [] 
         # Tableau of matrix based iterative
         self.tableau = np.array([])
-        
+
+    def temp(self): 
+        return self.weight
 
     # csv.reader 함수로 엑셀파일을 읽은 후 각 행의 element를 item의 number, weight, profit으로 담는다  
     def read_data(self, input_file_path):
